@@ -1,0 +1,40 @@
+INSTALLASI LOCALHOST:
+
+#1. Buat database dengan nama "db_kos" pada MySQL.
+    Anda dapat menggunakan phpmyadmin untuk membuat database.
+
+#2. Import "db_kos.sql" menggunakan phpmyadmin.
+
+#3. Cek konfigurasi pada file "config.php" yang terdapat pada folder:
+    "infokos/application/config", kemudian buka file config.php
+    menggunakan text editor seperti sublime/VStudio/nodepad++.
+    kemudian temukan kode berikut:
+    $config['base_url'] = 'http://localhost/infokos/';
+    
+    jika webserver anda tidak menggunakan PORT,
+    biarkan saja settingannya seperti itu, tetapi jika
+    web server anda menggunakan port, maka sertakan juga port web server anda.
+    contoh:
+    $config['base_url'] = 'http://localhost:8080/infokos/';
+    
+    Note: 8080 sesuaikan dengan port webserver anda. 
+
+#4. Buka browser Anda kemudian kunjungi URL berikut:
+    http://localhost/infokos/
+
+#5. User login
+    
+    ADMIN 
+    Email: admin@gmail.com
+    Password: 123456
+
+    Pemilik kos
+    Email: pemilik@gmail.com
+    password: pemilik
+
+    PENCARI
+    Email : pencari@gmail.com
+    password : pencari
+
+
+#6. Enjoy.
